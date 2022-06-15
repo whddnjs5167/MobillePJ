@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "281326565122",
+    "project_id": "mobilepj-f1074",
+    "storage_bucket": "mobilepj-f1074.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281326565122:android:80c98f6a873a1b07baf41b",
+        "android_client_info": {
+          "package_name": "com.example.mobillepj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281326565122-t6ciftdgrpmn8sk1sca0duj82p5bfkc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAphJ_V0YFEUW9Jq9wiAsATuTwZjcK1d_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281326565122-t6ciftdgrpmn8sk1sca0duj82p5bfkc0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
