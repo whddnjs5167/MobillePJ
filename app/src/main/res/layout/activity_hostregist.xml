@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HostRegistActivity">
+
+    <EditText
+        android:id="@+id/storenameEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="점포명"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/storelocationEt"
+        app:layout_constraintEnd_toEndOf="@+id/storelocationEt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/storelocationEt" />
+
+    <EditText
+        android:id="@+id/storelocationEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="점포 주소"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/storelocationTx"
+        app:layout_constraintEnd_toEndOf="@+id/storenumberEt"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/storenumberEt" />
+
+    <EditText
+        android:id="@+id/storenumberEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="208dp"
+        android:ems="10"
+        android:hint="점포 전화번호"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/storenextBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/storelocationTx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="20dp"
+        android:text="예) 전주시 덕진구 권삼득로 33, 1층"
+        app:layout_constraintBottom_toTopOf="@+id/storenumberEt"
+        app:layout_constraintStart_toStartOf="@+id/storelocationEt" />
+
+    <Button
+        android:id="@+id/storenextBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
