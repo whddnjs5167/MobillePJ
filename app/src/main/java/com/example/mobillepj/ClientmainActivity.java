@@ -22,16 +22,16 @@ public class ClientmainActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true); //뒤로가기버튼
         actionBar.setDisplayShowHomeEnabled(true); //홈 아이콘
 
-        Button mapBt = findViewById(R.id.mapBt);
-
-        mapBt.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                //intent함수를 통해 Clientmain액티비티 함수를 호출한다.
-                startActivity(new Intent(ClientmainActivity.this, MapActivity.class));
-            }
-        });
+//        Button mapBt = findViewById(R.id.mapBt);
+//
+//        mapBt.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                //intent함수를 통해 Clientmain액티비티 함수를 호출한다.
+//                startActivity(new Intent(ClientmainActivity.this, MapActivity.class));
+//            }
+//        });
     }
     public boolean onSupportNavigateUp() {
         onBackPressed();// 뒤로가기 버튼이 눌렸을시

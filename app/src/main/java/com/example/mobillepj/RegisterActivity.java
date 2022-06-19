@@ -66,13 +66,19 @@ public class RegisterActivity extends AppCompatActivity {
                 final String email = mEmailText.getText().toString().trim();
                 String pwd = mPasswordText.getText().toString().trim();
                 String pwdcheck = mPasswordcheckText.getText().toString().trim();
+                String name = mName.getText().toString().trim();
 
+                if(email.isEmpty() || pwd.isEmpty() || name.isEmpty()) {
+                    Toast.makeText(RegisterActivity.this, "입력을 모두 완료해주세요.",Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
                 if (pwd.equals(pwdcheck)) {
                     Log.d(TAG, "등록 버튼 " + email + " , " + pwd);
                     final ProgressDialog mDialog = new ProgressDialog(RegisterActivity.this);
                     mDialog.setMessage("가입중입니다...");
                     mDialog.show();
+
 
                     //파이어베이스에 신규계정 등록하기
                     firebaseAuth.createUserWithEmailAndPassword(email, pwd).addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
@@ -86,7 +92,6 @@ public class RegisterActivity extends AppCompatActivity {
                                 FirebaseUser user = firebaseAuth.getCurrentUser();
                                 String email = user.getEmail();
                                 String uid = user.getUid();
-                                String name = mName.getText().toString().trim();
 
                                 //해쉬맵 테이블을 파이어베이스 데이터베이스에 저장
                                 HashMap<Object, String> hashMap = new HashMap<>();

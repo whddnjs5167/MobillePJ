@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".HostMainActivity">
 
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:text="남은 좌석 수"
+            android:textAlignment="center"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/tableUpBt"
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            android:text="테이블 채우기" />
+
+        <Button
+            android:id="@+id/tableDownBt"
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:text="테이블 비우기" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bookListTx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

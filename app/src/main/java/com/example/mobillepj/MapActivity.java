@@ -29,8 +29,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         actionBar.setDisplayShowHomeEnabled(true); //홈 아이콘
 
         //map 관련 소스
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
 

@@ -7,63 +7,118 @@
     tools:context=".HostRegistActivity">
 
     <EditText
-        android:id="@+id/storenameEt"
+        android:id="@+id/storeNameEt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="140dp"
         android:ems="10"
         android:hint="점포명"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/storelocationEt"
-        app:layout_constraintEnd_toEndOf="@+id/storelocationEt"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/storelocationEt" />
-
-    <EditText
-        android:id="@+id/storelocationEt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:ems="10"
-        android:hint="점포 주소"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/storelocationTx"
-        app:layout_constraintEnd_toEndOf="@+id/storenumberEt"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/storenumberEt" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/storenumberEt"
+        android:id="@+id/storeNumberEt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="208dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="점포 전화번호"
         android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/storenextBt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/storelocationTx"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/storelocationTx"
+        app:layout_constraintTop_toBottomOf="@+id/storelocationTx" />
+
+    <EditText
+        android:id="@+id/storeMaxSeatEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="최대 좌석 수"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/storeNumberEt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/storeNumberEt"
+        app:layout_constraintTop_toBottomOf="@+id/storeNumberEt" />
+
+    <TextView
+        android:id="@+id/storeOpenCloseTx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예) 18:00~03:00"
+        app:layout_constraintStart_toStartOf="@+id/storeOpenCloseEt"
+        app:layout_constraintTop_toBottomOf="@+id/storeOpenCloseEt" />
+
+    <EditText
+        android:id="@+id/storeOpenCloseEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="개점폐점시간"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/storeMaxSeatEt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/storeMaxSeatEt"
+        app:layout_constraintTop_toBottomOf="@+id/storeMaxSeatEt" />
 
     <TextView
         android:id="@+id/storelocationTx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="4dp"
         android:text="예) 전주시 덕진구 권삼득로 33, 1층"
-        app:layout_constraintBottom_toTopOf="@+id/storenumberEt"
-        app:layout_constraintStart_toStartOf="@+id/storelocationEt" />
+        app:layout_constraintEnd_toEndOf="@+id/storeLocationEt"
+        app:layout_constraintStart_toStartOf="@+id/storeLocationEt"
+        app:layout_constraintTop_toBottomOf="@+id/storeLocationEt" />
+
+    <EditText
+        android:id="@+id/storeLocationEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="점포 주소"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/storeCategoEt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/storeCategoEt"
+        app:layout_constraintTop_toBottomOf="@+id/storeCategoEt" />
 
     <Button
         android:id="@+id/storenextBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="16dp"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/storeCategoEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="분류"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/storeNameEt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/storeNameEt"
+        app:layout_constraintTop_toBottomOf="@+id/storeNameEt" />
+
+    <TextView
+        android:id="@+id/storeCategoTx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예) 식당, 카페, 주점"
+        app:layout_constraintStart_toStartOf="@+id/storeCategoEt"
+        app:layout_constraintTop_toBottomOf="@+id/storeCategoEt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
